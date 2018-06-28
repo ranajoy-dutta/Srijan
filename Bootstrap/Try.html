@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Try 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width , initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css"> <!--Adding CSS file of bootstrap-->
+  	<script src="js/bootstrap.min.js"></script> <!--Adding JS file of bootstrap-->
+</head>
+
+<body>
+	<!--Before Starting With Bootstrap Go Through Grid System. Follow: https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp-->
+
+	<!--Using container and container-fluid-->
+	<div class="container">
+  		<h1>My First Bootstrap Page</h1>
+  		<p>This is some text.</p> 
+		<div class="row">
+			<div class="col-sm-4" style="background-color: red;">Column1</div>
+			<div class="col-sm-2" style="background-color: yellow">Column2</div>
+			<div class="col-sm-6" style="background-color: green">Column3</div>
+		</div>
+	</div>
+	<br/><hr><br/>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4" style="background-color: red;">Column1</div>
+			<div class="col-sm-2" style="background-color: yellow">Column2</div>
+			<div class="col-sm-6" style="background-color: green">Column3</div>
+		</div>
+	</div>
+	<!--Look for differnce between container and container-fluid at https://www.jquery-az.com/bootstrap-container-and-container-fluid-what-is-the-difference/-->
+
+	<hr><hr>
+
+	<!--Not So Important but notice use of text-center-->
+	<div class="container-fluid text-center">
+		<h2>Contextual Backgrounds</h2>
+		<p>Use the contextual background classes to provide "meaning through colors":</p>
+		<p class="bg-primary">This text is important.</p>
+		<p class="bg-success">This text indicates success.</p>
+		<p class="bg-info">This text represents some information.</p>
+		<p class="bg-warning">This text represents a warning.</p>
+		<p class="bg-danger">This text represents danger.</p>
+	</div>
+
+	<hr><hr>
+
+	<!--This code is to make a responsive table. The .table-responsive class creates a responsive table which will scroll horizontally on screens that are less than 992px wide (if needed). When viewing on anything larger than 992px, there is no difference.
+	follow :https://www.w3schools.com/bootstrap4/bootstrap_tables.asp-->
+	<div class="container">
+	 <div class="table-responsive">          
+	 <table class="table">
+	    <thead class="thead-dark">
+	      <tr>
+	        <th>#</th>
+	        <th>Firstname</th>
+	        <th>Lastname</th>
+	        <th>Age</th>
+	        <th>City</th>
+	        <th>Country</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>1</td>
+	        <td>Anna</td>
+	        <td>Pitt</td>
+	        <td>35</td>
+	        <td>New York</td>
+	        <td>USA</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	 </div>		
+	</div>
+	
+	<hr><hr>
+	
+	<!--Card Layouts-->
+	<div class="container-fluid">
+	  <h2>Cards</h2>
+	  <p>A card in Bootstrap 4 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.</p>
+	  <div class="row">
+	    <div class="card col-md-4 text-center bg-dark text-white" style="margin:auto; padding-top: 2%;">
+	        <img class="class-img-top img-fluid" src="Images/Image2.jpg" alt="bubble1" style="width:80%; margin:auto;">
+	        <div class="card-body">
+	        	<h4 class="card-title">This is card 1</h4>
+	        	<p class="card-text">This is a picture of a bubble</p>
+	        <a href="#" class="btn btn-primary">Go to the link</a>
+	      	</div>
+	    </div>
+	    <div class="card col-md-4 text-center bg-dark text-white" style="margin:auto; padding-top: 2%;">
+	        <img class="class-img-top img-fluid" src="Images/Image1.jpg" alt="Leaf" style="width:80%; margin:auto;">
+	        <div class="card-body">
+	        	<h4 class="card-img-overlay text-justify">This text is on the image</h4>
+	        	<h4 class="card-title">This is card 2</h4>
+	        	<p class="card-text">This is a picture of a Leaf</p>
+	        <a href="#" class="btn btn-primary">Go to the link</a>
+	      	</div>
+	    </div>
+	    <div class="card col-md-4 text-center bg-dark text-white" style="margin:auto; padding-top: 2%;">
+	        <img class="class-img-top img-fluid" src="Images/Image3.jpg" alt="bubble2" style="width:80%; margin:auto;">
+	        <div class="card-body">
+	        	<h4 class="card-title">This is card 3</h4>
+	        	<p class="card-text">This is a picture of a Bubble	</p>
+	        <a href="#" class="btn btn-primary">Go to the link</a>
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--Take Reference https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp-->
+
+</body>
+</html>
